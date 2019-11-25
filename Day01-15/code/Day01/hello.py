@@ -15,8 +15,11 @@ python hello.py
 python3 hello.py
 """
 
-print('hello, world!')
+print('hello, world!')#hello, world!
 # print("你好,世界！")
-print('你好', '世界')
-print('hello', 'world', sep=', ', end='!')
+print('你好', '世界')#你好 世界
+print('hello', 'world', sep=', ', end='!')#hello, world!goodbye, world!
 print('goodbye, world', end='!\n')
+print('I just have to practice the usage of python !\n')#I just have to practice the usage of python !
+
+print('beijing','shenzhen','wuhan',sep='###',end='***\n')#beijing###shenzhen###wuhan***

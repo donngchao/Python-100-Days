@@ -34,6 +34,8 @@ def main():
     fruits_tuple = tuple(fruits_list)
     print(fruits_tuple)
     print(fruits_tuple[1])
+    #fruits_tuple[0] = 'pear'
+    #TypeError: 'tuple' object does not support item assignment
 
 
 if __name__ == '__main__':

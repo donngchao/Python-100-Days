@@ -14,4 +14,15 @@ print(a * b)
 print(a / b)
 print(a // b)
 print(a % b)
-print(a ** b)
+print(a ** b)#a ^ b
+'''
+a = 10
+b = 3
+13
+7
+30
+3.3333333333333335
+3
+1
+1000
+'''

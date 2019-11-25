@@ -2,22 +2,76 @@
 类型转换
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-02-27
+Author: tester
+Date: 2019-11-25
 """
 
 a = 100
+print(a)#100
+print(type(a))#<class 'int'>
 b = str(a)
+print('the value of b is:',b)#the value of b is: 100
+print(type(b))#<class 'str'>
 c = 12.345
+print('the value of c is:',c)
+print('the type of c is:',type(c))
 d = str(c)
+print('the value of d is:',d)
+print('the type of d is:',type(d))
+'''
+the value of d is: 12.345
+the type of d is: <class 'str'>
+'''
+
 e = '123'
+print('the value of e is:',e)
+print('the type of e is:',type(e))
 f = int(e)
+print('the value of f is:',f)
+print('the type of f is:',type(f))
 g = '123.456'
+print('the value of g is:',g)
+print('the type of g is:',type(g))
+'''
+the value of g is: 123.456
+the type of g is: <class 'str'>
+'''
 h = float(g)
+print('the value of h is:',h)
+print('the type of h is:',type(h))
+'''
+the value of h is: 123.456
+the type of h is: <class 'float'>
+'''
 i = False
+print('the value of i is:',i)
+print('the type of i is:',type(i))
+'''
+the value of i is: False
+the type of i is: <class 'bool'>
+'''
 j = str(i)
+print('the value of j is:',j)
+print('the type of j is:',type(j))
+'''
+the value of j is: False
+the type of j is: <class 'str'>
+'''
 k = 'hello'
+print('the value of k is:',k)
+print('the type of k is:',type(k))
+'''
+the value of k is: hello
+the type of k is: <class 'str'>
+'''
 m = bool(k)
+print('the value of m is:',m)
+print('the type of m is:',type(m))
+'''
+the value of m is: True
+the type of m is: <class 'bool'>
+'''
+
 print(a)
 print(type(a))
 print(b)
