@@ -6,9 +6,14 @@ Author: 骆昊
 Date: 2018-03-05
 """
 
-
+"""
+C(n,m)=n!/((n-m)!*m!)（m≤n）
+"""
 # 将求阶乘的功能封装成一个函数
 def factorial(n):
+    if n == 0:
+        result = 1
+        return result
     result = 1
     for num in range(1, n + 1):
         result *= num
@@ -16,3 +21,9 @@ def factorial(n):
 
 
 print(factorial(7) // factorial(3) // factorial(4))
+
+print(factorial(0))
+print(factorial(1))
+print(factorial(2))
+print(factorial(3))
+
