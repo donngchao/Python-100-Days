@@ -14,3 +14,11 @@ for num in range(100, 1000):
     high = num // 100
     if num == low ** 3 + mid ** 3 + high ** 3:
         print(num)
+
+for num2 in range(1000,10000):
+    lowest = num2 % 10
+    second = num2 // 10 % 10
+    third  = num2 // 100 % 10
+    fourth = num2 // 1000
+    if num2 == lowest ** 4 + second ** 4 + third ** 4 + fourth ** 4:
+        print("find the interesting number between 1000 and 10000 now : ",num2)
