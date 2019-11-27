@@ -5,7 +5,7 @@ Version: 0.1
 Author: tester
 Date: 2019-11-25
 """
-
+#use the function type() to get the variable's type
 a = 100
 print(a)#100
 print(type(a))#<class 'int'>
@@ -15,6 +15,10 @@ print(type(b))#<class 'str'>
 c = 12.345
 print('the value of c is:',c)
 print('the type of c is:',type(c))
+"""
+the value of c is: 12.345
+the type of c is: <class 'float'>
+"""
 d = str(c)
 print('the value of d is:',d)
 print('the type of d is:',type(d))
@@ -26,9 +30,17 @@ the type of d is: <class 'str'>
 e = '123'
 print('the value of e is:',e)
 print('the type of e is:',type(e))
+'''
+the value of e is: 123
+the type of e is: <class 'str'>
+'''
 f = int(e)
 print('the value of f is:',f)
 print('the type of f is:',type(f))
+'''
+the value of f is: 123
+the type of f is: <class 'int'>
+'''
 g = '123.456'
 print('the value of g is:',g)
 print('the type of g is:',type(g))
@@ -96,3 +108,47 @@ print(k)
 print(type(k))
 print(m)
 print(type(m))
+'''
+100
+<class 'int'>
+100
+<class 'str'>
+12.345
+<class 'float'>
+12.345
+<class 'str'>
+123
+<class 'str'>
+123
+<class 'int'>
+123.456
+<class 'str'>
+123.456
+<class 'float'>
+False
+<class 'bool'>
+False
+<class 'str'>
+hello
+<class 'str'>
+True
+<class 'bool'>
+
+'''
+
+complex_number = 34 + 56j  #This is a complex number.
+print(complex_number)
+print(type(complex_number))
+
+'''
+(34+56j)
+<class 'complex'>
+'''
+
+test_string = "hello,world" #This is a string.
+print(test_string)
+print(type(test_string))
+'''
+hello,world
+<class 'str'>
+'''

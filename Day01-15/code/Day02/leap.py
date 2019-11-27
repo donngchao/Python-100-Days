@@ -15,3 +15,11 @@ year = int(input('请输入年份: '))
 is_leap = (year % 4 == 0 and year % 100 != 0 or
            year % 400 == 0)
 print(is_leap)
+if is_leap:
+    print("This year is leap year : %d " %(year))
+
+'''
+请输入年份: 2008
+True
+This year is leap year : 2008 
+'''

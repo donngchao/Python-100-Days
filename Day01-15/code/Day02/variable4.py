@@ -13,10 +13,16 @@ d = 1 + 5j
 e = 'A'
 f = 'hello, world'
 g = True
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
-print(type(e))
-print(type(f))
-print(type(g))
+h = {"age":"18"}
+i = [1,2,3]
+print(type(a))#<class 'int'>
+print(type(b))#<class 'int'>
+print(type(c))#<class 'float'>
+print(type(d))#<class 'complex'>
+print(type(e))#<class 'str'>
+print(type(f))#<class 'str'>
+print(type(g))#<class 'bool'>
+print(type(h))#<class 'dict'>
+print(type(i))#<class 'list'>
+
+
