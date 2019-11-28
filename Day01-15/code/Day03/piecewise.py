@@ -17,3 +17,27 @@ elif x >= -1:
 else:
     y = 5 * x + 3
 print('f(%.2f) = %.2f' % (x, y))
+
+
+'''
+        7x + 6  (x > 5)
+f(x) =  6x - 9    (-5 <= x <= 5)
+        3x + 36  (x < -5)
+'''
+
+b = float(input("please input number b: "))
+if b > 5:
+    a = 7 * b + 6
+elif b >= -5:
+    a = 6 * b - 9
+else:
+    a = 3 * b + 36
+
+print('f(%.2f) = %.2f'%(b,a))
+
+'''
+x = 9
+f(9.00) = 22.00
+please input number b: 9
+f(9.00) = 69.00
+'''

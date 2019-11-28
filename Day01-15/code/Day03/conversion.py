@@ -1,9 +1,7 @@
 """
 英制单位英寸和公制单位厘米互换
 
-Version: 0.1
-Author: 骆昊
-Date: 2018-02-28
+this program is used to convert differt units number
 """
 
 value = float(input('请输入长度: '))
@@ -16,3 +14,8 @@ elif unit == 'km' or unit == '公里':
     print('%f公里 = %f米' % (value, value*1000))
 else:
     print('请输入有效的单位')
+'''
+请输入长度: 9
+请输入单位: in
+9.000000英寸 = 22.860000厘米
+'''

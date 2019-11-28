@@ -12,14 +12,23 @@ Date: 2018-02-28
 """
 
 score = float(input('请输入成绩: '))
-if score >= 90:
+if score < 0:
+    grade = 'unknown...'
+    print('your input is not valid ...')
+elif score >= 90:
     grade = 'A'
+    print('good job , please continue...')
 elif score >= 80:
     grade = 'B'
+    print('almost good , please work harder')
 elif score >= 70:
     grade = 'C'
+    print('you need to be more careful next time ...')
 elif score >= 60:
     grade = 'D'
+    print("warning...it's a little dangerous...")
 else:
     grade = 'E'
+    print("oh no, you need to catch up ...")
+
 print('对应的等级是:', grade)

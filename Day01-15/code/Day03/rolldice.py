@@ -1,9 +1,6 @@
 """
 掷骰子决定做什么事情
-
-Version: 0.1
-Author: 骆昊
-Date: 2018-02-28
+use randint function
 """
 from random import randint
 
@@ -18,6 +15,7 @@ elif face == 4:
     result = '做俯卧撑'
 elif face == 5:
     result = '念绕口令'
-else:
+elif face == 6:
     result = '讲冷笑话'
+
 print(result)

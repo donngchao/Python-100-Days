@@ -11,4 +11,4 @@ a = 0
 b = 1
 for _ in range(20):
     a, b = b, a + b
-    print(a, end=' ')
+    print(a, end=' ')#斐波那契数列（Fibonacci sequence），又称黄金分割数列
