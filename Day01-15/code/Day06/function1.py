@@ -5,6 +5,7 @@ Version: 0.1
 Author: 骆昊
 Date: 2018-03-05
 """
+import math
 
 """
 C(n,m)=n!/((n-m)!*m!)（m≤n）
@@ -27,3 +28,7 @@ print(factorial(1))
 print(factorial(2))
 print(factorial(3))
 
+def square_root(n):
+    return math.sqrt(n)
+
+print(square_root(2))

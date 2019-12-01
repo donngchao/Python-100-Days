@@ -19,18 +19,26 @@ def main():
     fruits += ['pitaya', 'pear', 'mango']
     # 循环遍历列表元素
     for fruit in fruits:
-        print(fruit.title(), end=' ')
+        print(fruit.title(), end=' ')  #  Grape Apple Strawberry Waxberry Pitaya Pear Mango
+
     print()
     # 列表切片
-    fruits2 = fruits[1:4]
-    print(fruits2)
+    fruits2 = fruits[1:4] # fruits has not changed
+    print(fruits2) #['apple', 'strawberry', 'waxberry']
     # fruit3 = fruits  # 没有复制列表只创建了新的引用
-    fruits3 = fruits[:]
-    print(fruits3)
+    fruits3 = fruits[:] # slice a new variable
+    print(fruits) #['grape', 'apple', 'strawberry', 'waxberry', 'pitaya', 'pear', 'mango']
+    print(fruits3) #['grape', 'apple', 'strawberry', 'waxberry', 'pitaya', 'pear', 'mango']
+    fruits3[1] = 'orange'
+
+    print(fruits)  #['grape', 'apple', 'strawberry', 'waxberry', 'pitaya', 'pear', 'mango']
+    print(fruits3) #['grape', 'orange', 'strawberry', 'waxberry', 'pitaya', 'pear', 'mango']
+
     fruits4 = fruits[-3:-1]
-    print(fruits4)
-    fruits5 = fruits[::-1]
-    print(fruits5)
+    print(fruits4)   #['pitaya', 'pear']
+    fruits5 = fruits[::-1] #list has been reversed
+    print(fruits5) #['mango', 'pear', 'pitaya', 'waxberry', 'strawberry', 'apple', 'grape']
+
 
 
 if __name__ == '__main__':
