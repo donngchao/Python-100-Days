@@ -10,6 +10,11 @@ class Test:
 
 def main():
     test = Test('hello')
+    # print("test.__foo is equal to:", test.__foo)
+    # AttributeError: 'Test' object has no attribute '__foo'
+    # test.__bar()
+    # AttributeError: 'Test' object has no attribute '__bar'
+
     test._Test__bar()
     print(test._Test__foo)
 
