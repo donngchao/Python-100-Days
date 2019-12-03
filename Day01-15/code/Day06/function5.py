@@ -16,8 +16,8 @@ def f1(a, b=5, c=10):
     return a + b * 2 + c * 3
 
 
-print(f1(1, 2, 3))
-print(f1(100, 200))
+print(f1(1, 2, 3)) # 14
+print(f1(100, 200)) # 100--> a ,200-->b
 print(f1(100))
 print(f1(c=2, b=3, a=1))
 
@@ -45,8 +45,9 @@ def f3(**kw):
         print('没找到你的个人信息!')
 
 
-param = {'name': '骆昊', 'age': 38}
-f3(**param)
-f3(name='骆昊', age=38, tel='13866778899')
-f3(user='骆昊', age=38, tel='13866778899')
-f3(user='骆昊', age=38, mobile='13866778899')
+# param = {'name': '骆昊', 'age': 38}
+# f3(**param)
+# f3(name='骆昊', age=38, tel='13866778899')
+# f3(user='骆昊', age=38, tel='13866778899')
+# f3(user='骆昊', age=38, mobile='13866778899')
+f3(tel='000', situation='here', hobby='study', money='1000')

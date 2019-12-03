@@ -32,3 +32,18 @@ def square_root(n):
     return math.sqrt(n)
 
 print(square_root(2))
+
+
+def keep_happy():
+    return  'you should be happy today.'
+
+print(keep_happy())
+'''
+35
+1
+1
+2
+6
+1.4142135623730951
+you should be happy today.
+'''

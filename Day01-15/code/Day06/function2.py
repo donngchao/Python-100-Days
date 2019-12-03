@@ -22,3 +22,19 @@ def lcm(x, y):
 
 print(gcd(15, 27))
 print(lcm(15, 27))
+
+
+def maxnum(x,y):
+    if x > y:
+        return x
+    else:
+        return y
+
+
+print(maxnum(10, 100))
+
+'''
+3
+135
+100
+'''
