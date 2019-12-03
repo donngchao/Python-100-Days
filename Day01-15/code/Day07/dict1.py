@@ -9,9 +9,15 @@ Date: 2018-03-06
 
 def main():
     scores = {'骆昊': 95, '白元芳': 78, '狄仁杰': 82, "诸葛亮":88}
+    print(type(scores)) #<class 'dict'>
     print(scores['骆昊'])
     print(scores['狄仁杰'])
     print(scores['诸葛亮'])
+    #print(scores['kk'])
+    '''
+        print(scores['kk'])
+        KeyError: 'kk'
+    '''
     for elem in scores:
         print('%s\t--->\t%d' % (elem, scores[elem]))
     scores['白元芳'] = 65
