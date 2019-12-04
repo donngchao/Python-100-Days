@@ -35,3 +35,82 @@ True
 True
 False
 '''
+
+str5 = 'go!go!go!'
+print(str5, "***", type(str5))
+str6 = "python is a kind of programming language!"
+print(str6, "***", type(str6))
+'''
+go!go!go! *** <class 'str'>
+python is a kind of programming language! *** <class 'str'>
+'''
+
+str7 = 'I want to say " is allowed in python string'
+print(str7)
+# I want to say " is allowed in python string
+
+str8 = "I'm tired after a the day job"
+print(str8)
+# I'm tired after a the day job
+
+name_test = "central park"
+print(name_test.title())
+# Central Park
+name_test2 = 'CeNtRal PaRk'
+print(name_test2.title())
+# Central Park
+print(name_test.upper())
+print(name_test.lower())
+'''
+CENTRAL PARK
+central park
+'''
+
+first_name = "Jimmy"
+last_name = "Jack"
+full_name = first_name + " " + last_name
+print(full_name)  # Jimmy Jack
+print("Hello, "+full_name.title()+" !")
+hello_message = "Hello, "+full_name.upper()+" !"
+print(hello_message)
+
+print("Python")
+print("\tPython")
+
+'''
+Python
+	Python
+'''
+print("Languages:\n\tPython\n\tGo\n\tRuby")
+'''
+Languages:
+	Python
+	Go
+	Ruby
+'''
+
+hobby = 'playing games  '
+print(hobby.rstrip()+'be happy')
+#playing gamesbe happy
+
+'''
+>>> speak = 'English '
+>>> speak
+'English '
+>>> speak.rstrip()
+'English'
+>>> speak
+'English '
+>>> speak = speak.rstrip()
+>>> speak
+'English'
+>>> speak = ' English '
+>>> speak.rstrip()
+' English'
+>>> speak.lstrip()
+'English '
+>>> speak.strip()
+'English'
+>>> speak
+' English '
+'''

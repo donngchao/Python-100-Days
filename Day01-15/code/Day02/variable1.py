@@ -25,3 +25,33 @@ print(c / d)#2.018181818181818
 print(c // d)#2
 print(c % d)#1
 print(c ** d)#31100246644321096731824953596569881861247961259543920822350536747217892816788226371841030264201710581840005409551
+
+test_str = 'what you want, just try your best to do it!'
+print(test_str)
+# what you want, just try your best to do it!
+test_str = 'I say do not give up! '
+print(test_str)
+# I say do not give up!
+messeage_1 = 'test'
+# 1_messeage = 'error'
+
+'''
+    1_messeage = 'error'
+     ^
+SyntaxError: invalid token
+'''
+greeting_messeage = 'hello'
+# greeting messeage = 'error'
+'''
+    greeting messeage = 'error'
+                    ^
+SyntaxError: invalid syntax
+'''
+message = 'start to do it'
+#print(msg)
+
+'''
+    print(msg)
+2.6097560975609757
+NameError: name 'msg' is not defined
+'''

@@ -32,3 +32,17 @@ print(flag2 is not False)#False
 print(not flag4)        #False
 print("1" is True)      #False
 
+print(4 + 4)
+print(3 + 5)
+print(1 + 7)
+print(2 * 4)
+print(16 // 2)
+print(18 -10)
+'''
+8
+8
+8
+8
+8
+8
+'''
