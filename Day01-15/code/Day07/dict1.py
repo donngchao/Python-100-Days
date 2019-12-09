@@ -8,11 +8,12 @@ Date: 2018-03-06
 
 
 def main():
-    scores = {'骆昊': 95, '白元芳': 78, '狄仁杰': 82, "诸葛亮":88}
+    scores = {'骆昊': 95, '白元芳': 78, '狄仁杰': 82, "诸葛亮":88,'key':900}
     print(type(scores)) #<class 'dict'>
     print(scores['骆昊'])
     print(scores['狄仁杰'])
     print(scores['诸葛亮'])
+    print(scores['key'])
     #print(scores['kk'])
     '''
         print(scores['kk'])
@@ -27,13 +28,14 @@ def main():
     if '武则天' in scores:
         print(scores['武则天'])
     print(scores.get('武则天'))  # None
+    print(scores.get('刘德华'))  # None
     print(scores.get('李治'))  # None
     print(scores.get('武则天', 60))
     print(scores)
     print(scores.popitem())
     print(scores.popitem())
     print(scores.pop('骆昊', 100))
-    print(scores)
+    print(scores) #{'白元芳': 65, '狄仁杰': 82, '诸葛亮': 88, 'key': 900, '诸葛王朗': 71, '冷面': 67}
     scores.clear()
     print(scores)  #  {}
 

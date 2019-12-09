@@ -8,9 +8,10 @@ Date: 2018-03-06
 
 
 def main():
-    set1 = {1, 2, 3, 3, 3, 2}
-    print(set1)
-    set_test1 = {11,11,12,12,13,13}
+    apple = 'apple'
+    set1 = {1, 2, 3, 3, 3, 2,apple}
+    print(set1) #{1, 2, 3, 'apple'}
+    set_test1 = {11,11,12,12,13,13,13}
     print("set_test1 is ",set_test1) #set_test1 is  {11, 12, 13}
     print('Length of set1 =', len(set1))
     print('Length of set_test1 =', len(set_test1)) #Length of set_test1 = 3
