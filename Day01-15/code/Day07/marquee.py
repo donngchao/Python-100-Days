@@ -11,11 +11,11 @@ import time
 
 
 def main():
-    str = 'Welcome to 1000 Phone Chengdu Campus      '
+    str = 'Welcome to Sweety Coffe and please enjoy yourself      '
     while True:
         print(str)
-        time.sleep(0.2)
-        str = str[1:] + str[0:1]
+        time.sleep(0.0001)
+        str = str[1:] + str[0:1]  # slice test
         # for Windows use os.system('cls') instead
         os.system('cls')
 

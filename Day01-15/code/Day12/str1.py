@@ -13,6 +13,7 @@ print('My brother\'s name is \'007\'')
 # 原始字符串
 print(r'My brother\'s name is \'007\'')
 print(r'I just type in whatever I \'d like here')
+print("I just type in whatever I'd like here")
 str = 'hello123world'
 print('he' in str)
 print('her' in str)
@@ -42,3 +43,6 @@ print(email.lstrip())
 pyperclip.copy('老虎不发猫你当我病危呀')
 # 从系统剪切板获得文本
 print(pyperclip.paste())
+print(pyperclip.paste())
+
+
