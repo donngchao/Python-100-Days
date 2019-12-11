@@ -64,7 +64,7 @@ class Ball(object):
 
 
 def main():
-    # 定义用来装所有球的容器
+    # 定义用来装所有球的容器, 也就是定义一个空列表
     balls = []
     # 初始化导入的pygame中的模块
     pygame.init()
@@ -73,7 +73,7 @@ def main():
     print(screen.get_width())
     print(screen.get_height())
     # 设置当前窗口的标题
-    pygame.display.set_caption('大球吃小球')
+    pygame.display.set_caption('大球吃小球游戏哟')
     # 定义变量来表示小球在屏幕上的位置
     x, y = 50, 50
     running = True
@@ -82,12 +82,12 @@ def main():
         # 从消息队列中获取事件并对事件进行处理
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
+                running = False  # 退出游戏
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 x, y = event.pos
-                radius = randint(10, 100)
+                radius = randint(10, 100)  # 定义一个随机大小的半径
                 sx, sy = randint(-10, 10), randint(-10, 10)
-                color = Color.random_color()
+                color = Color.random_color()  # 定义一个随机的颜色
                 ball = Ball(x, y, radius, sx, sy, color)
                 balls.append(ball)
         screen.fill((255, 255, 255))

@@ -39,6 +39,9 @@ def main():
     scores.clear()
     print(scores)  #  {}
 
+    dictest = {'food':'bread', 'game':'phone'}
+    print(dictest['food'])
+    print(dictest['game'])
 
 if __name__ == '__main__':
     main()
