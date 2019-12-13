@@ -37,7 +37,7 @@ num2 = input('num2 = ')
 
 '''
 Traceback (most recent call last):
-  File "D:/Python-100-Days/Day01-15/code/Day02/variable3.py", line 36, in <module>
+  File "D:/Python-100-Days/Day01_15/code/Day02/variable3.py", line 36, in <module>
     print(num1 * num2)
 TypeError: can't multiply sequence by non-int of type 'str'
 '''

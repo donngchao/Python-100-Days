@@ -47,3 +47,12 @@ print(keep_happy())
 1.4142135623730951
 you should be happy today.
 '''
+
+def calcNum(a,b,c):
+    if a > 0 and b > 0 and c > 0:
+        return a + b + c
+    else:
+        return a * b * c
+
+print(calcNum(1,2,3))
+print(calcNum(-1,2,3))
