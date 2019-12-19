@@ -10,7 +10,7 @@
 import re
 import requests
 from urllib import error
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup  #从bs4这个库导入BeautifulSoup
 import os
 
 num = 0
@@ -52,7 +52,7 @@ def recommend(url):
         return
     else:
         html.encoding = 'utf-8'
-        bsObj = BeautifulSoup(html.text, 'html.parser')
+        bsObj = BeautifulSoup(html.text, 'html.parser')  #使用BeautifulSoup解析
         div = bsObj.find('div', id='topRS')
         if div is not None:
             listA = div.findAll('a')
