@@ -18,17 +18,28 @@ numPicture = 0
 file = ''
 List = []
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+}
 
-def Find(url):
+
+def find(url):
     global List
     print('We are now searching the total number of pictures , please wait a moment.....')
     t = 0
     i = 1
     s = 0
+
     while t < 1000:
         Url = url + str(t)
         try:
-            Result = requests.get(Url, timeout=20)
+            Result = requests.get(Url, timeout=20, headers=headers)
         except BaseException:
             t = t + 60
             continue
@@ -47,7 +58,7 @@ def Find(url):
 def recommend(url):
     Re = []
     try:
-        html = requests.get(url)
+        html = requests.get(url, headers=headers)
     except error.HTTPError as e:
         return
     else:
@@ -71,14 +82,14 @@ def downloadPicture(html, keyword):
         print('正在下载第' + str(num + 1) + '张图片，图片地址:' + str(each))
         try:
             if each is not None:
-                pic = requests.get(each, timeout=20)
+                pic = requests.get(each, timeout=20, headers=headers)
             else:
                 continue
         except BaseException:
             print('错误，当前图片无法下载')
             continue
         else:
-            string = file + r'\\' + keyword + '_' + str(num) + '.jpg'
+            string = file + r'/' + keyword + '_' + str(num) + '.jpg'
             fp = open(string, 'wb')
             fp.write(pic.content)
             fp.close()
@@ -91,7 +102,7 @@ if __name__ == '__main__':  # 主函数入口
     word = input("请输入搜索关键词(可以是人名，地名等): ")
     # add = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=%E5%BC%A0%E5%A4%A9%E7%88%B1&pn=120'
     url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + word + '&pn='
-    tot = Find(url)
+    tot = find(url)
     Recommend = recommend(url)  # 记录相关推荐
     print('经过检测%s类图片共有%d张' % (word, tot))
     numPicture = int(input('请输入想要下载的图片数量 '))
@@ -108,7 +119,7 @@ if __name__ == '__main__':  # 主函数入口
     while t < numPicture:
         try:
             url = tmp + str(t)
-            result = requests.get(url, timeout=20)
+            result = requests.get(url, timeout=20, headers=headers)
             print(url)
         except error.HTTPError as e:
             print('网络错误，请调整网络后重试')
